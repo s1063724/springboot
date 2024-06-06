@@ -1,0 +1,17 @@
+server:
+  port: 8081
+#  path: /haa
+
+person:
+  lastName: Tom
+  age: 32
+  boss: false
+  birth: 1998/06/03
+  maps: {k1: v1,k2: 23}
+  lists: 
+    - list
+    - many
+   
+  dog:
+    name: 旺財
+    age: 6
