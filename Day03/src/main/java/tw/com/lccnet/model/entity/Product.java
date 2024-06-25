@@ -23,9 +23,10 @@ public class Product {
 	private boolean active;
 	private String imageurl;
 	@CreationTimestamp//資料建立時間
-	private LocalDateTime dateCreate;
+	private LocalDateTime dataCreate;
 	@UpdateTimestamp//資料更新時間
 	private LocalDateTime lastUpdate;
+	
 	public Product() {
 		super();
 	}
@@ -59,11 +60,11 @@ public class Product {
 	public void setImageurl(String imageurl) {
 		this.imageurl = imageurl;
 	}
-	public LocalDateTime getDateCreate() {
-		return dateCreate;
+	public LocalDateTime getDataCreate() {
+		return dataCreate;
 	}
-	public void setDateCreate(LocalDateTime dateCreate) {
-		this.dateCreate = dateCreate;
+	public void setDataCreate(LocalDateTime dataCreate) {
+		this.dataCreate = dataCreate;
 	}
 	public LocalDateTime getLastUpdate() {
 		return lastUpdate;
@@ -74,7 +75,8 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", active=" + active
-				+ ", imageurl=" + imageurl + ", dateCreate=" + dateCreate + ", lastUpdate=" + lastUpdate + "]";
+				+ ", imageurl=" + imageurl + ", dataCreate=" + dataCreate + ", lastUpdate=" + lastUpdate + "]";
 	}
+	
 	
 }

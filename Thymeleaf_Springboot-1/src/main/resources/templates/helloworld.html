@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Thymeleaf</title>
+<!-- 導入CSS -->
+<link th:href="@{/css/main.css}" rel="stylesheet">
+<!-- 導入JS -->
+<script type="text/javascript" th:src="@{/js/action.js}"></script>
+</head>
+<body>
+
+	<h1 th:text="'這是首頁'+${message}+' App'"></h1>
+	
+</body>
+</html>

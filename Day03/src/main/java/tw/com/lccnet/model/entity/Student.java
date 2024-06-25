@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class Student {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="stu_id",nullable=false)//註解欄位名稱,nullable->非空
+	@Column(name="stu_id",nullable=false)//nullable，欄位不能為空
 	private int stuId;
 	@Column(name="stu_name",nullable=false)
 	private String stuName;
@@ -20,11 +20,10 @@ public class Student {
 	private float stuAge;
 	@Column(name="stu_branch")
 	private String stuBranch;
-	//空白建構子
+	//空參數建構子
 	public Student() {
 		super();
 	}
-	
 	public int getStuId() {
 		return stuId;
 	}
@@ -49,7 +48,6 @@ public class Student {
 	public void setStuBranch(String stuBranch) {
 		this.stuBranch = stuBranch;
 	}
-
 	@Override
 	public String toString() {
 		return "Student [stuId=" + stuId + ", stuName=" + stuName + ", stuAge=" + stuAge + ", stuBranch=" + stuBranch
